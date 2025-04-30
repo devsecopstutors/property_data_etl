@@ -1,0 +1,18 @@
+# Environment
+.env
+*.env
+
+# Data
+data/
+!data/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# IDE
+.venv/
+__pycache__/
+*.py[cod]
+archives/
+archive/
