@@ -39,7 +39,7 @@ Raises:
 import logging
 import json
 import os
-from etl.extract import load_raw_data
+from etl.extract import load_raw_data, extract_from_api
 from etl.transform import PropertyTransformer
 from etl.load import DatabaseLoader
 from config.settings import Config
@@ -65,6 +65,11 @@ def main():
     loader = DatabaseLoader()
     logger = logging.getLogger(__name__)
     logger.info("Starting ETL process...")
+
+    # Exztract data from API
+    logger.info("Extracting data from API...")
+    extract_from_api()
+    logger.info("Data extracted from API.")
 
     # Load raw data
     logger.info("Loading raw data...")

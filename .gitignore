@@ -16,3 +16,26 @@ __pycache__/
 *.py[cod]
 archives/
 archive/
+notebooks/
+*.ipynb_checkpoints
+*.DS_Store
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.sublime-settings
+*.sublime-metrics
+# Python
+*.egg-info/
+*.egg
+*.coverage
+*.cover
+*.hypothesis/
+.coveragerc
+*.mypy_cache/
+*.pytest_cache/
+*.pylint.d
+*.tox/
+*.coverage.*
+*.coverage.*
+*.hypothesis/
